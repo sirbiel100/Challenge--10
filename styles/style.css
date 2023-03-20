@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  max-width: 1440px;
+}
+
+body {
+  background-color: hsl(30, 20%, 96%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+header h1 {
+  font-size: 45px;
+  color: hsl(0, 0%, 8%);
+}
+header .nav-part {
+  display: flex;
+  align-items: center;
+}
+header nav {
+  margin-left: 4rem;
+  margin-right: 30rem;
+  width: 30rem;
+}
+header nav ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: hsl(0, 0%, 41%);
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav ul li:hover {
+  transition: 0.3s all ease-in-out;
+  color: hsl(0, 0%, 8%);
+}
+
+.features {
+  position: relative;
+}
+.features .arrow-down {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+.features .arrow-up {
+  display: none;
+  margin-left: 0.2rem;
+}
+.features .feature-list {
+  color: hsl(0, 0%, 41%) !important;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: white;
+  width: 10rem;
+  border-radius: 15px;
+  cursor: pointer;
+  display: none;
+}
+.features .feature-list p {
+  border-radius: 10px;
+}
+.features .feature-list p:hover {
+  transition: all 0.3s ease;
+  background-color: rgb(250, 246, 236);
+}
+.features .feature-list img {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.company {
+  position: relative;
+}
+.company .arrow-down2 {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+.company .arrow-up2 {
+  display: none;
+  margin-left: 0.2rem;
+}
+.company .company-list {
+  color: hsl(0, 0%, 41%) !important;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 8rem;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.company .company-list p {
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}
+.company .company-list p:hover {
+  transition: all 0.3s ease;
+  background-color: rgb(250, 246, 236);
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+.buttons button {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+}
+.buttons button:hover {
+  transition: color 0.3s ease-in-out;
+  color: hsl(0, 0%, 8%);
+}
+.buttons .register {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  padding: 0.8rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+}
+.buttons .register:hover {
+  transition: border 0.3s ease-in-out;
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.open-menu, .close-menu {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 25% 40%;
+  grid-template-rows: auto auto 8%;
+  width: 85%;
+  height: auto;
+  margin-top: 3rem;
+  margin-left: 7rem;
+}
+main .image-mobile {
+  display: none;
+}
+
+.text-content {
+  grid-row: 1/span 2;
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  padding-right: 8rem;
+}
+.text-content h2 {
+  color: hsl(0, 0%, 8%);
+  font-size: 70px;
+}
+.text-content p {
+  margin-top: 3rem;
+  color: hsl(0, 0%, 41%);
+}
+.text-content button {
+  cursor: pointer;
+  margin-top: 3rem;
+  border: none;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(30, 20%, 96%);
+  font-weight: 700;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 15px;
+}
+.text-content button:hover {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: hsl(0, 0%, 8%);
+  border: 1.5px solid hsl(0, 0%, 8%);
+}
+
+.image-content {
+  grid-row: 1/span 3;
+  grid-column: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.patrocinadores {
+  grid-row: 3;
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: relative;
+    display: none;
+  }
+  ul {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+  }
+}/*# sourceMappingURL=style.css.map */
