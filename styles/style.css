@@ -29,42 +29,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: purple;
 }
 
-.header {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-top: 1rem;
+  padding: 1rem;
 }
-.header h1 {
-  font-size: 45px;
-  color: hsl(0, 0%, 8%);
-}
-.header .nav-part {
+nav .left {
   display: flex;
   align-items: center;
-  width: 200%;
-  background-color: green;
+  justify-content: flex-start;
+  width: 50%;
 }
-.header nav {
-  display: flex;
-  align-items: center;
-  margin-left: 4rem;
-}
-.header nav ul {
+nav .left ul {
   position: relative;
   display: flex;
-  align-items: center;
   gap: 2rem;
-  color: hsl(0, 0%, 41%);
+  margin-left: 3rem;
 }
-.header nav ul li {
+nav .left ul li {
+  color: hsl(0, 0%, 41%);
   cursor: pointer;
 }
-.header nav ul li:hover {
+nav .left ul li:hover {
   transition: 0.3s all ease-in-out;
+  color: hsl(0, 0%, 8%);
+}
+nav h1 {
+  font-size: 45px;
   color: hsl(0, 0%, 8%);
 }
 
@@ -172,11 +170,12 @@ body {
 
 .main {
   display: grid;
-  margin-left: 13rem;
-  grid-template-columns: 25% 25% 40%;
-  grid-template-rows: auto auto 8%;
-  height: auto;
-  margin-top: 4rem;
+  place-items: center;
+  justify-items: center;
+  background-color: blue;
+  grid-template-columns: auto auto 30%;
+  grid-template-rows: auto auto auto;
+  width: 100%;
 }
 .main .image-mobile {
   display: none;
@@ -189,8 +188,8 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding-top: 5rem;
-  padding-right: 6rem;
+  background-color: red;
+  width: 50%;
 }
 .text-content h2 {
   color: hsl(0, 0%, 8%);
@@ -222,18 +221,17 @@ body {
 .image-content {
   grid-row: 1/span 3;
   grid-column: 3;
-  width: 100%;
-  height: 100%;
+  background-color: green;
 }
 
 .patrocinadores {
   grid-row: 3;
   grid-column: 1/span 2;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
+  width: 50%;
   gap: 2.5rem;
+  background-color: black;
 }
 
 .image {
