@@ -284,7 +284,7 @@ h1 {
     position: fixed;
     right: 0;
     margin-right: 2rem;
-    background-color: hsl(0, 0%, 41%);
+    background-color: rgba(128, 128, 128, 0.349);
     border-radius: 20px;
     text-align: center;
     width: 3rem;
