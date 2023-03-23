@@ -43,18 +43,16 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    padding: 1rem;
-
-    .left {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 50%;
+    padding: 2rem;
+    
+    
         ul {
             position: relative;
+            right: 18rem;
             display: flex;
+            align-items: center;
             gap: 2rem;
             margin-left: 3rem;
             
@@ -73,65 +71,69 @@ nav {
     h1 {
        font-size: 45px;
        color: $AlmostBlack;
+       margin-right: 1rem;
 
     }
 
-}
+
 
 .features {
     position: relative;
 
     .arrow-down {
-        display: inline-block;
+        display: none;
         margin-left: .2rem;
     }
 
     .arrow-up {
-        display: none;
+        
+        display: inline-block;
         margin-left: .2rem;
     }
     
-    .feature-list {
-        color: $MediumGray !important;
-        position: absolute;
-        top: 2rem;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-        background-color: white;
-        width: 10rem;
-        border-radius: 15px;
-        cursor: pointer;
-        display: none;
-         p {
-            border-radius: 10px;
+    
 
-            &:hover {
-                transition: all .3s ease ;
-                background-color: rgb(250, 246, 236);
-            }
-         }
-         
-        img {
-            display: inline-block;
-            padding-right: 1rem;
+}
+
+.feature-list {
+    color: $MediumGray !important;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: white;
+    width: 10rem;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+     p {
+        border-radius: 10px;
+
+        &:hover {
+            transition: all .3s ease ;
+            background-color: rgb(250, 246, 236);
         }
-       
+     }
+     
+    img {
+        display: inline-block;
+        padding-right: 1rem;
     }
-
+   
 }
 
 .company {
         position: relative;
     .arrow-down2 {
-        display: inline-block;
+        display: none;
         margin-left: .2rem;
     }
 
     .arrow-up2 {
-        display: none;
+        display: inline-block;
         margin-left: .2rem;
     }
     
@@ -163,6 +165,8 @@ nav {
 }
 
 .buttons {
+    position: relative;
+    left: 20rem;
     display: flex;
     gap: 2rem;
     
@@ -198,13 +202,11 @@ nav {
 
     .main {
         display: grid;
-        place-items: center;
-        align-content: center;
-        grid-template-columns: 25% 25% 30%;
-        grid-template-rows: auto auto auto;
+        place-content: center;
+        grid-template-columns: 15% 15% 25%;
+        grid-template-rows: auto 0 auto;
         width: 100%;
-        padding: 5rem;
-        padding-left: 12rem;
+        margin-top: 4rem;
         .image-mobile {
             display: none;
         }
@@ -215,14 +217,13 @@ nav {
       grid-column: 1 / span 2;
       display: flex;
       flex-direction: column;
-      align-items: start;
-      padding: 5rem;
-      width: fit-content;
-      height: 100%;  
+      align-items: flex-start; 
+      justify-content: center;
      
       h2 {
         color: $AlmostBlack;
         font-size: 60px;
+        inline-size: 80%;
  
       }
 
@@ -257,7 +258,7 @@ nav {
         grid-row: 1 / span 3;
         grid-column: 3;
         height: 100%;
-        
+        margin-left: 2rem;
     }
 
     .patrocinadores {
@@ -266,8 +267,11 @@ nav {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 2.5rem;
+        gap: 1rem;
+        img {
+            position: relative;
+            top: 4rem;
+        }
     }
 
 
@@ -288,42 +292,77 @@ nav {
         justify-content: start;
     }
 
-    .header {
-        padding: 0;
-        margin: 0;
-        align-items: start;
+    nav { 
+        position: relative;
+        justify-content: space-between;
+        
+            ul {
+                background-color: white;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 50vw;
+                height: 100vh;
+                flex-direction: column;
+                z-index: 1;
+                align-items: flex-start;
+                padding-top: 5rem;
+                padding-left: 1rem;
+                box-shadow: -250px 0px 0px 200px rgba(0, 0, 0, 0.295);
+
+                .buttons {
+                    position: static;
+                    margin-top: 2rem;
+                    justify-content: center;
+                    flex-direction: column;
+                    z-index: 22;
+                    button {
+                        width: 14rem;
+                    }
+                }
+                
+            
+        }
+        
     }
 
-    nav {
-        ul {
-            li {
-                display: none
-            }
-        }
-    }
     .open-menu {
         cursor: pointer;
-        display: inline-block;
-        position: absolute;
+        display: block;
+        position: fixed;
         right: 0;
         margin-right: 2rem;
+        background-color: $MediumGray;
+        border-radius: 20px;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        img {
+            position: relative;
+            top: .8rem;
+        }
     }
 
     .close-menu {
         cursor: pointer;
-        display: none;
+        display: block;
         position: absolute;
+        top: 2.8rem;
         right: 0;
         margin-right: 2rem;
-        z-index: 20;
+       
     }
-    .buttons {
-        display: none;
-        position: static;
-        flex-direction: column;
-        button {
-            width: 9rem;
-        }
+
+    .feature-list {
+        display: none ;
+        position:  static ;
+        margin-top: 1rem;
+    }
+
+    .company-list {
+        display: none ;
+        position: static !important;
+        margin-top: 1rem;
     }
 
     .main {
@@ -339,7 +378,8 @@ nav {
         grid-row: 1;
         grid-column: 1 ;
         width: 100%;
-        padding: 0;
+        margin: 0;
+        margin-top: 2rem;
     }
 
     .text-content {
@@ -356,10 +396,11 @@ nav {
     }
 
     .patrocinadores {
+        position: static;
         grid-row: 3;
         grid-column: 1;
         margin-top: 2rem;
-        gap: 1rem;
+        justify-content: space-evenly;
     }
 
     .image-mobile {

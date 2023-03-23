@@ -12,15 +12,15 @@
 <div class="main-page">
 
             <nav>
-                <div class="left">
+                
                     <h1>snap</h1>
-                <div class="open-menu" id="open"><img src="./images/icon-menu.svg" alt="menu"></div>
-                <div class="close-menu" id="close"><img src="./images/icon-close-menu.svg" alt="menu"></div>
-                <ul>
-                    <li class="features">Features 
+                
+                <ul id="ul">
+                    <div class="close-menu" id="close"><img src="./images/icon-close-menu.svg" alt="menu"></div>
+                    <li class="features" id="features">Features 
                         <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow-down"> 
                         <img src="./images/icon-arrow-up.svg" alt="arrow up" class="arrow-up"> 
-                    <div class="feature-list">
+                    <div class="feature-list" id="feature-list">
                     <p><img src="./images/icon-todo.svg" alt="todo">Todo List</p>
                     <p><img src="./images/icon-calendar.svg" alt="calendar">Calendar</p>
                     <p><img src="./images/icon-reminders.svg" alt="reminders">Reminders</p>
@@ -28,10 +28,10 @@
                     </div> 
                 </li>
             
-                    <li class="company">Company 
+                    <li class="company" id="company">Company 
                         <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow-down2"> 
                         <img src="./images/icon-arrow-up.svg" alt="arrow up" class="arrow-up2"> 
-                    <div class="company-list">
+                    <div class="company-list" id="company-list">
                         <p>History</p>
                         <p>Our Team</p>
                         <p>Blog</p>
@@ -39,12 +39,15 @@
                 </li>
                     <li>Careers</li>
                     <li>About</li>
+                    <div class="buttons">
+                        <button>Login</button>
+                        <button class="register">Register</button>
+                    </div>
                 </ul>
-                </div>
-                <div class="buttons">
-                    <button>Login</button>
-                    <button class="register">Register</button>
-                </div>
+              
+                
+                <div class="open-menu" id="open"><img src="./images/icon-menu.svg" alt="menu"></div>
+                
             </nav>
     
     <main>
@@ -68,5 +71,6 @@
     </main>
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
