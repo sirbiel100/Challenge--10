@@ -36,13 +36,11 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   padding: 2rem;
+  padding-left: 8rem;
 }
 nav ul {
-  position: relative;
-  right: 18rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -229,7 +227,7 @@ h1 {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .patrocinadores img {
   position: relative;
@@ -251,8 +249,8 @@ h1 {
     justify-content: start;
   }
   nav {
-    position: relative;
-    justify-content: space-between;
+    padding-left: 1rem;
+    justify-content: flex-start;
   }
   nav ul {
     background-color: white;
@@ -351,5 +349,35 @@ h1 {
   }
   .image {
     display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+@media (min-width: 601px) and (max-width: 1400px) {
+  html {
+    overflow-x: auto;
+  }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+  ul {
+    width: 100vh;
+    margin: 0;
+    margin-right: 7rem;
+  }
+  .buttons {
+    position: static;
+    margin-left: 10rem;
+  }
+  .main {
+    width: 100vh;
+    height: auto;
+    grid-template-columns: auto auto 50%;
+    grid-template-rows: auto auto auto;
+  }
+  .patrocinadores img {
+    position: static;
   }
 }/*# sourceMappingURL=style.css.map */
