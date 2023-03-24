@@ -198,7 +198,7 @@ h1 {
 .text-content button {
   cursor: pointer;
   margin-top: 3rem;
-  border: none;
+  border: 1.5px solid hsl(0, 0%, 8%);
   background-color: hsl(0, 0%, 8%);
   color: hsl(30, 20%, 96%);
   font-weight: 700;
@@ -211,7 +211,6 @@ h1 {
   transition: all 0.3s ease;
   background-color: transparent;
   color: hsl(0, 0%, 8%);
-  border: 1.5px solid hsl(0, 0%, 8%);
 }
 
 .image-content {

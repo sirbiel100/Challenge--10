@@ -234,7 +234,7 @@ nav {
       button {
         cursor: pointer;
         margin-top: 3rem;
-        border: none;
+        border: 1.5px solid $AlmostBlack;
         background-color: $AlmostBlack;
         color: $AlmostWhite;
         font-weight: 700;
@@ -247,7 +247,6 @@ nav {
             transition: all 0.3s ease;
             background-color: transparent;
             color: $AlmostBlack;
-            border: 1.5px solid $AlmostBlack;
         }
       }
 
