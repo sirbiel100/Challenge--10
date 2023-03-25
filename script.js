@@ -49,6 +49,21 @@ const closeMenu = document.querySelector('#close')
 const ul = document.querySelector('#ul')
 
 openMenu.addEventListener('click', () => {
+    ul.classList.toggle('navbar-toggle');
+    openMenu.classList.toggle('open-toggle');
+    closeMenu.classList.toggle('close-toggle');
+    
+})
+
+closeMenu.addEventListener('click', () => {
+    ul.classList.toggle('navbar-toggle');
+    openMenu.classList.toggle('open-toggle');
+    closeMenu.classList.toggle('close-toggle');
+    
+}) 
+
+/*
+openMenu.addEventListener('click', () => {
     if (window.innerWidth <= 600 && ul.style.display != 'flex') {
         ul.style.display = 'flex'
         console.log ('oi')
@@ -62,4 +77,4 @@ closeMenu.addEventListener('click', () => {
 
     } else {}
 
-})
+}) */

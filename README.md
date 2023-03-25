@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-scss-js-and-html-nYv2JYpAiN#comment-641e02625174143fdb4fffc6)
+- Live Site URL: [Click here](https://sirbiel100.github.io/Challenge--10/)
 
 ## My process
 
@@ -58,7 +58,8 @@ I learned how to use better CSS Grid!
 ```
 ```js
 const proudOfThisFunc = () => {
-  onclick('🎉')
+  onclick('🎉');
+  toggle;
 }
 ```
 
